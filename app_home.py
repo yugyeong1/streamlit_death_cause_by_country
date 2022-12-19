@@ -4,8 +4,6 @@ from PIL import Image
 from tkinter.tix import COLUMN
 from pyparsing import empty
 
-
-
 def run_home_app() : 
     # 국가별 사망원인 데이터프레임
     death_cause = pd.read_csv('data/Death Cause Reason by Country.csv')
