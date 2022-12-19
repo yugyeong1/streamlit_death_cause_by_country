@@ -4,9 +4,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
 import altair as alt
+from PIL import Image
 
 def run_eda2():
 # 국가별 사망원인 데이터프레임
+    st.text(' ')
     death_cause = pd.read_csv('data/Death Cause Reason by Country.csv')
     death_cause.drop(columns= 'Unnamed: 32', axis= 1, inplace= True)
     death_cause['total of death'] = death_cause.sum(axis=1, numeric_only=True)
@@ -30,5 +32,38 @@ def run_eda2():
     else :
         st.dataframe(death_cause[death_cause['Country Name'] == my_choice])
 
+    
+
+    st.text(' ')
+
+    
+    col1, col2, col3 = st.columns(3)
+
+    # image 사이트 참고 https://www.printableworldflags.com/flag-icon
+    with col1 :
+        img = ('https://www.printableworldflags.com/icon-flags/48/'+ my_choice +'.png')
+        st.image(img, use_column_width= True)
+        
+    with col2 :
+        st.text(' ')
+        st.text(' ')
+        st.text(' ')
+        st.markdown('######  선택한 나라의 Total 사망자 수')
+        st.dataframe(death_cause[death_cause['Country Name'] == my_choice][['Country Name', 'total of death']])
+
+    with col3 :
+        st.text(' ')
 
 
+    data = death_cause[death_cause['Country Name'] == my_choice].iloc[:,0:-1].set_index('Country Name')
+    data_top10 = data.sum().sort_values(ascending= False).head(15)
+    data_top10 = data_top10.to_frame().reset_index()
+    data_top10.rename(columns= {'index' : 'diseases', 0: 'Count of Death'}, inplace= True)
+
+
+    st.text(' ')
+    st.text(' ')
+    st.text(' ')
+    st.markdown('##### 선택한 나라의 사망원인 Top 15 를 차트로 나타냅니다.')
+    fig2 = px.bar(data_top10, x= 'diseases', y= 'Count of Death', title= 'Cause of death Top 15')
+    st.plotly_chart(fig2)

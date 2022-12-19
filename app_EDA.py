@@ -8,14 +8,14 @@ from eda_1 import run_eda1
 from eda_2 import run_eda2
 
 def run_eda_app() :
-    menu = ['데이터분석', '원하는 국가']
+    menu = ['전체 사망자 수, 사망원인 분석', '선택한 국가의 데이터분석']
  
     choice_eda = st.sidebar.selectbox('메뉴', menu)
 
-    if choice_eda == '데이터분석' :
+    if choice_eda == '전체 사망자 수, 사망원인 분석' :
         run_eda1()
 
-    elif choice_eda == '원하는 국가' :
+    elif choice_eda == '선택한 국가의 데이터분석' :
         run_eda2()
 
 
