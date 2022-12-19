@@ -12,3 +12,4 @@ def run_about_app() :
     st.text(' ')
     st.dataframe(death_cause)
     st.info('데이터출처 https://www.kaggle.com/datasets/majyhain/death-cause-by-country')
+
