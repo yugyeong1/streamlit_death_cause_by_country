@@ -14,7 +14,7 @@ def run_home_app() :
     st.text(' ')
 
 
-    st.markdown('##### 2020년 국가별 사망 원인 데이터를 이용하여 분석한 앱입니다.')
+    st.markdown('##### 국가별 사망 원인 데이터를 이용하여 분석한 앱입니다.')
     st.text(' ')
 
     col1, col2 = st.columns(2)
