@@ -83,6 +83,8 @@ putty 에 접속하지 않아도, 자동으로 배포할 수 있도록 하였습
 
 <div align="left">
 
+
+
 ### 📌 Link
 
 
@@ -92,7 +94,52 @@ http://ec2-3-36-60-118.ap-northeast-2.compute.amazonaws.com:8502/
 </div>  
 
 <br/>
+
+#### 📷 앱 대시보드 화면
+
 <br/>
+
+#### Home 화면에는 앱 대시보드에 대한 설명을 보여준다.
+
+![image](https://user-images.githubusercontent.com/104052659/208863109-da3784e0-cbdb-4fd8-ae3a-24056e77e0e8.png)
+
+
+<br/>
+
+#### EDA의 전체사망자수, 사망원인 분석 부분 화면이다.
+
+![image](https://user-images.githubusercontent.com/104052659/208863726-49408045-439f-4775-92ea-ae796bbd17a8.png)
+
+
+
+<br/>
+
+#### EDA의 전체사망자수, 사망원인 분석 부분 화면이다.
+
+![image](https://user-images.githubusercontent.com/104052659/208863726-49408045-439f-4775-92ea-ae796bbd17a8.png)
+
+<br/>
+
+#### EDA의 사용자가 선택한 국가의 데이터분석 결과를 보여준다.
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/104052659/208864128-ec1674c2-cede-448c-8130-9e364a1f0090.png)
+
+![image](https://user-images.githubusercontent.com/104052659/208864528-44a0a8ef-3662-4731-b276-77ef741a6a3d.png)
+
+<br/>
+
+
+#### About 화면
+
+<br/>
+
+![image](https://user-images.githubusercontent.com/104052659/208864646-47e46b8d-aa32-4530-add2-23ab78123c8e.png)
+
+
+<br/>
+
 
 ### 데이터분석에 이용한 csv 데이터 컬럼
 
@@ -133,5 +180,6 @@ conflict and terrorism : 갈등과 테러로 인한 사망자 수
 diabetes : 당뇨병으로 인한 사망자 수  
 total of death : 각 나라별 총 사망자 수  
 
+<br/>
 
-### 데이터출처 https://www.kaggle.com/datasets/majyhain/death-cause-by-country
+#### 데이터출처 https://www.kaggle.com/datasets/majyhain/death-cause-by-country
