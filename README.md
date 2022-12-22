@@ -112,11 +112,6 @@ http://ec2-3-36-60-118.ap-northeast-2.compute.amazonaws.com:8502/
 
 
 
-<br/>
-
-#### EDA의 전체사망자수, 사망원인 분석 부분 화면이다.
-
-![image](https://user-images.githubusercontent.com/104052659/208863726-49408045-439f-4775-92ea-ae796bbd17a8.png)
 
 <br/>
 
